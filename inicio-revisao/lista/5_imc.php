@@ -3,13 +3,15 @@
 // Variáveis
 $altura = 1.52; //metros
 $peso = 50; //kilos
-$imc = 0;
 
-calcularIMC($altura, $peso);
-function calcularIMC($altura, $peso) {
+
+function calcularIMC(float $altura, float $peso): float {
     $imc = $peso / ($altura * $altura);
     echo "O IMC é: " . number_format($imc, 2) . "\n";
+    return $imc;
 }
+
+$imc = calcularIMC($altura, $peso);
 
 // Condições e  classificação do IMC
 if ($imc < 18.5) {
