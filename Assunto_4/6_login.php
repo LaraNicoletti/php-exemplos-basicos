@@ -28,7 +28,7 @@
         $nome = $_POST['nome'];
         $senha = $_POST['senha'];
 
-        // Abre o arquiv usuarios.txt para leitura
+        // Abre o arquivo usuarios.txt para leitura
         $arquivo = fopen('../Assunto_3/usuarios.txt', 'r');
         $login_sucesso = false;
 
